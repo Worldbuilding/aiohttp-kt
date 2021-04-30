@@ -5,7 +5,7 @@ from unittest.mock import patch
 
 import pytest
 
-from aiohttp.resolver import AsyncResolver, DefaultResolver, ThreadedResolver
+from aiohttp_kt.resolver import AsyncResolver, DefaultResolver, ThreadedResolver
 
 try:
     import aiodns

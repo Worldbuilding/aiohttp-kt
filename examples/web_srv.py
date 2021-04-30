@@ -5,7 +5,7 @@
 import asyncio
 import textwrap
 
-from aiohttp.web import Application, Response, StreamResponse, run_app
+from aiohttp_kt.web import Application, Response, StreamResponse, run_app
 
 
 async def intro(request):

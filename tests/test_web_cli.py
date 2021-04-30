@@ -1,6 +1,6 @@
 import pytest
 
-from aiohttp import web
+from aiohttp_kt import web
 
 
 def test_entry_func_empty(mocker):

@@ -5,8 +5,8 @@ import unittest
 import zlib
 from unittest import mock
 
-import aiohttp
-from aiohttp import CIMultiDict, errors, protocol
+import aiohttp_kt as aiohttp
+from aiohttp_kt import CIMultiDict, errors, protocol
 
 
 class TestParseHeaders(unittest.TestCase):

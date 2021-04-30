@@ -11,7 +11,7 @@ from types import MappingProxyType
 
 from yarl import URL
 
-import aiohttp
+import aiohttp_kt as aiohttp
 
 from . import hdrs, helpers
 from .client import ClientRequest

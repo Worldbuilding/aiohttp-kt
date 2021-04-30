@@ -5,11 +5,11 @@ import pytest
 from multidict import CIMultiDict, CIMultiDictProxy
 from yarl import URL
 
-import aiohttp
-from aiohttp import web, web_reqrep
-from aiohttp.test_utils import TestClient as _TestClient
-from aiohttp.test_utils import TestServer as _TestServer
-from aiohttp.test_utils import (AioHTTPTestCase, RawTestServer, loop_context,
+import aiohttp_kt as aiohttp
+from aiohttp_kt import web, web_reqrep
+from aiohttp_kt.test_utils import TestClient as _TestClient
+from aiohttp_kt.test_utils import TestServer as _TestServer
+from aiohttp_kt.test_utils import (AioHTTPTestCase, RawTestServer, loop_context,
                                 make_mocked_request, setup_test_loop,
                                 teardown_test_loop, unittest_run_loop)
 

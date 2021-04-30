@@ -11,7 +11,7 @@ import warnings
 from multidict import CIMultiDict, MultiDict, MultiDictProxy, istr
 from yarl import URL
 
-import aiohttp
+import aiohttp_kt as aiohttp
 
 from . import hdrs, helpers
 from ._ws_impl import WS_KEY, WebSocketParser, WebSocketWriter

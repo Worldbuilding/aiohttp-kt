@@ -8,8 +8,8 @@ from unittest import mock
 import multidict
 import pytest
 
-from aiohttp import errors, protocol
-from aiohttp._ws_impl import WS_KEY, do_handshake
+from aiohttp_kt import errors, protocol
+from aiohttp_kt._ws_impl import WS_KEY, do_handshake
 
 
 @pytest.fixture()

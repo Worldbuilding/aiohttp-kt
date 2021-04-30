@@ -7,8 +7,8 @@ import logging
 import os
 import sys
 
-import aiohttp
-import aiohttp.server
+import aiohttp_kt as aiohttp
+import aiohttp_kt.server
 
 try:
     import ssl
@@ -16,7 +16,7 @@ except ImportError:  # pragma: no cover
     ssl = None
 
 
-class HttpRequestHandler(aiohttp.server.ServerHttpProtocol):
+class HttpRequestHandler(aiohttp_kt.server.ServerHttpProtocol):
 
     @asyncio.coroutine
     def handle_request(self, message, payload):

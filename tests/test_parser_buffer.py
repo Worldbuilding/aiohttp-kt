@@ -2,7 +2,7 @@ from unittest import mock
 
 import pytest
 
-from aiohttp import errors, parsers
+from aiohttp_kt import errors, parsers
 
 
 @pytest.fixture

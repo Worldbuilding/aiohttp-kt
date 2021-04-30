@@ -9,7 +9,7 @@ from trafaret_config import commandline
 
 
 import aiohttp_jinja2
-from aiohttp import web
+from aiohttp_kt import web
 from aiohttpdemo_polls.db import close_pg, init_pg
 from aiohttpdemo_polls.middlewares import setup_middlewares
 from aiohttpdemo_polls.routes import setup_routes

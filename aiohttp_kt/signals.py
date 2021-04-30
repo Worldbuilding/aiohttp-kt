@@ -1,7 +1,7 @@
 import asyncio
 from itertools import count
 
-from aiohttp.helpers import FrozenList
+from aiohttp_kt.helpers import FrozenList
 
 
 class BaseSignal(FrozenList):

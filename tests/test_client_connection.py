@@ -3,7 +3,7 @@ from unittest import mock
 
 import pytest
 
-from aiohttp.connector import Connection
+from aiohttp_kt.connector import Connection
 
 
 @pytest.fixture

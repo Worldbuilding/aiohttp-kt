@@ -1,7 +1,7 @@
 import pytest
 
-import aiohttp
-from aiohttp import web
+import aiohttp_kt as aiohttp
+from aiohttp_kt import web
 
 
 async def test_async_with_session(loop):

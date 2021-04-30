@@ -2,8 +2,8 @@ import asyncio
 
 import pytest
 
-import aiohttp
-from aiohttp import hdrs, helpers, web
+import aiohttp_kt as aiohttp
+from aiohttp_kt import hdrs, helpers, web
 
 
 @asyncio.coroutine

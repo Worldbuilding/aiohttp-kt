@@ -6,10 +6,10 @@ from unittest import mock
 
 import pytest
 
-import aiohttp
-from aiohttp import ClientWebSocketResponse, errors, hdrs, helpers
-from aiohttp._ws_impl import WS_KEY
-from aiohttp.log import ws_logger
+import aiohttp_kt as aiohttp
+from aiohttp_kt import ClientWebSocketResponse, errors, hdrs, helpers
+from aiohttp_kt._ws_impl import WS_KEY
+from aiohttp_kt.log import ws_logger
 
 
 @pytest.fixture

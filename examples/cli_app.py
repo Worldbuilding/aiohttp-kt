@@ -14,7 +14,7 @@ arguments to the `cli_app:init` function for processing.
 
 from argparse import ArgumentParser
 
-from aiohttp.web import Application, Response
+from aiohttp_kt.web import Application, Response
 
 
 def display_message(req):

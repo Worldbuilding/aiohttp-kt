@@ -3,8 +3,8 @@ from unittest import mock
 
 import pytest
 
-from aiohttp import helpers, log, web
-from aiohttp.abc import AbstractRouter
+from aiohttp_kt import helpers, log, web
+from aiohttp_kt.abc import AbstractRouter
 
 
 def test_app_ctor(loop):

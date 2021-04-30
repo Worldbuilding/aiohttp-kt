@@ -3,9 +3,9 @@ from collections.abc import Coroutine
 
 import pytest
 
-import aiohttp
-from aiohttp import web
-from aiohttp.client import _RequestContextManager
+import aiohttp_kt as aiohttp
+from aiohttp_kt import web
+from aiohttp_kt.client import _RequestContextManager
 
 
 async def test_await(test_server, loop):

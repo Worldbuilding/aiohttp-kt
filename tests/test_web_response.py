@@ -7,10 +7,10 @@ from unittest import mock
 import pytest
 from multidict import CIMultiDict
 
-from aiohttp import hdrs, signals
-from aiohttp.protocol import HttpVersion, HttpVersion10, HttpVersion11
-from aiohttp.test_utils import make_mocked_request
-from aiohttp.web import ContentCoding, Response, StreamResponse, json_response
+from aiohttp_kt import hdrs, signals
+from aiohttp_kt.protocol import HttpVersion, HttpVersion10, HttpVersion11
+from aiohttp_kt.test_utils import make_mocked_request
+from aiohttp_kt.web import ContentCoding, Response, StreamResponse, json_response
 
 
 def make_request(method, path, headers=CIMultiDict(),

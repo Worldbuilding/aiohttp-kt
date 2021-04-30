@@ -5,32 +5,32 @@
 	@touch .install-deps
 
 isort:
-	isort -rc aiohttp
+	isort -rc aiohttp_kt
 	isort -rc tests
 	isort -rc examples
 	isort -rc demos
 
 flake: .flake
 
-.flake: .install-deps $(shell find aiohttp -type f) \
+.flake: .install-deps $(shell find aiohttp_kt -type f) \
                       $(shell find tests -type f) \
                       $(shell find benchmark -type f) \
                       $(shell find examples -type f) \
                       $(shell find demos -type f)
-	@flake8 aiohttp --exclude=aiohttp/backport_cookies.py
+	@flake8 aiohttp_kt --exclude=aiohttp_kt/backport_cookies.py
 	@if python -c "import sys; sys.exit(sys.version_info < (3,5))"; then \
 	    flake8 examples tests demos benchmark && \
             python setup.py check -rms; \
 	fi
-	@if ! isort -c -rc aiohttp tests examples; then \
+	@if ! isort -c -rc aiohttp_kt tests examples; then \
             echo "Import sort errors, run 'make isort' to fix them!!!"; \
-            isort --diff -rc aiohttp tests benchmark examples; \
+            isort --diff -rc aiohttp_kt tests benchmark examples; \
             false; \
 	fi
 	@touch .flake
 
 
-.develop: .install-deps $(shell find aiohttp -type f) .flake
+.develop: .install-deps $(shell find aiohttp_kt -type f) .flake
 	@pip install -e .
 	@touch .develop
 
@@ -44,16 +44,16 @@ cov cover coverage:
 	tox
 
 cov-dev: .develop
-	@py.test --cov=aiohttp --cov-report=term --cov-report=html tests
+	@py.test --cov=aiohttp_kt --cov-report=term --cov-report=html tests
 	@echo "open file://`pwd`/coverage/index.html"
 
 cov-dev-full: .develop
 	@echo "Run without extensions"
-	@AIOHTTP_NO_EXTENSIONS=1 py.test --cov=aiohttp tests
+	@AIOHTTP_NO_EXTENSIONS=1 py.test --cov=aiohttp_kt tests
 	@echo "Run in debug mode"
-	@PYTHONASYNCIODEBUG=1 py.test --cov=aiohttp --cov-append tests
+	@PYTHONASYNCIODEBUG=1 py.test --cov=aiohttp_kt --cov-append tests
 	@echo "Regular run"
-	@py.test --cov=aiohttp --cov-report=term --cov-report=html --cov-append tests
+	@py.test --cov=aiohttp_kt --cov-report=term --cov-report=html --cov-append tests
 	@echo "open file://`pwd`/coverage/index.html"
 
 clean:
@@ -71,14 +71,14 @@ clean:
 	@rm -rf cover
 	@make -C docs clean
 	@python setup.py clean
-	@rm -f aiohttp/_multidict.html
-	@rm -f aiohttp/_multidict.c
-	@rm -f aiohttp/_multidict.*.so
-	@rm -f aiohttp/_multidict.*.pyd
-	@rm -f aiohttp/_websocket.html
-	@rm -f aiohttp/_websocket.c
-	@rm -f aiohttp/_websocket.*.so
-	@rm -f aiohttp/_websocket.*.pyd
+	@rm -f aiohttp_kt/_multidict.html
+	@rm -f aiohttp_kt/_multidict.c
+	@rm -f aiohttp_kt/_multidict.*.so
+	@rm -f aiohttp_kt/_multidict.*.pyd
+	@rm -f aiohttp_kt/_websocket.html
+	@rm -f aiohttp_kt/_websocket.c
+	@rm -f aiohttp_kt/_websocket.*.so
+	@rm -f aiohttp_kt/_websocket.*.pyd
 	@rm -rf .tox
 
 doc:

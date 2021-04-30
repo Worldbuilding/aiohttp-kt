@@ -14,11 +14,11 @@ from unittest import mock
 import pytest
 from yarl import URL
 
-import aiohttp
-from aiohttp import client, helpers, web
-from aiohttp.client import ClientRequest
-from aiohttp.connector import Connection
-from aiohttp.test_utils import unused_port
+import aiohttp_kt as aiohttp
+from aiohttp_kt import client, helpers, web
+from aiohttp_kt.client import ClientRequest
+from aiohttp_kt.connector import Connection
+from aiohttp_kt.test_utils import unused_port
 
 
 def test_del(loop):

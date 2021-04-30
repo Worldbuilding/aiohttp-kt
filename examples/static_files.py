@@ -1,6 +1,6 @@
 import pathlib
 
-from aiohttp import web
+from aiohttp_kt import web
 
 app = web.Application()
 app.router.add_static('/', pathlib.Path(__file__).parent, show_index=True)

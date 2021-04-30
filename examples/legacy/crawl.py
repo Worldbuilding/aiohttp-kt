@@ -7,7 +7,7 @@ import signal
 import sys
 import urllib.parse
 
-import aiohttp
+import aiohttp_kt as aiohttp
 
 
 class Crawler:

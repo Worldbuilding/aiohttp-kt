@@ -10,7 +10,7 @@ import sys
 from multiprocessing import Barrier, Process, set_start_method
 from statistics import mean, median, stdev
 
-import aiohttp
+import aiohttp_kt as aiohttp
 
 
 def find_port():
@@ -26,7 +26,7 @@ profiler = cProfile.Profile()
 
 def run_aiohttp(host, port, barrier, profile):
 
-    from aiohttp import web
+    from aiohttp_kt import web
 
     @asyncio.coroutine
     def test(request):

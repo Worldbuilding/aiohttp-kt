@@ -1,7 +1,7 @@
 import pytest
 
-import aiohttp
-from aiohttp import helpers, web
+import aiohttp_kt as aiohttp
+from aiohttp_kt import helpers, web
 
 
 async def test_client_ws_async_for(loop, test_client):

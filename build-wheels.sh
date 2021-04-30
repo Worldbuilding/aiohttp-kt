@@ -14,7 +14,7 @@ done
 
 echo "Install packages and test"
 for PYTHON in ${PYTHON_VERSIONS}; do
-    /opt/python/${PYTHON}/bin/pip install aiohttp --no-index -f file:///io/dist
+    /opt/python/${PYTHON}/bin/pip install aiohttp_kt --no-index -f file:///io/dist
     rm -rf /io/tests/__pycache__
     rm -rf /io/tests/test_py35/__pycache__
     /opt/python/${PYTHON}/bin/py.test /io/tests

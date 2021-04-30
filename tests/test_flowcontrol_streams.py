@@ -2,7 +2,7 @@ import asyncio
 import unittest
 from unittest import mock
 
-from aiohttp import streams
+from aiohttp_kt import streams
 
 
 class TestFlowControlStreamReader(unittest.TestCase):

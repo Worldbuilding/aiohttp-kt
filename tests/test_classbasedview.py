@@ -3,8 +3,8 @@ from unittest import mock
 
 import pytest
 
-from aiohttp import web
-from aiohttp.web_urldispatcher import View
+from aiohttp_kt import web
+from aiohttp_kt.web_urldispatcher import View
 
 
 def test_ctor():

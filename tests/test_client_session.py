@@ -9,11 +9,11 @@ import pytest
 from multidict import CIMultiDict, MultiDict
 from yarl import URL
 
-import aiohttp
-from aiohttp import web
-from aiohttp.client import ClientSession
-from aiohttp.connector import BaseConnector, TCPConnector
-from aiohttp.helpers import SimpleCookie
+import aiohttp_kt as aiohttp
+from aiohttp_kt import web
+from aiohttp_kt.client import ClientSession
+from aiohttp_kt.connector import BaseConnector, TCPConnector
+from aiohttp_kt.helpers import SimpleCookie
 
 
 @pytest.fixture

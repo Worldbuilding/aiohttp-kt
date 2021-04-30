@@ -8,11 +8,11 @@ from urllib.parse import unquote
 import pytest
 from yarl import URL
 
-import aiohttp
-from aiohttp import hdrs, web
-from aiohttp.test_utils import make_mocked_request
-from aiohttp.web import HTTPMethodNotAllowed, HTTPNotFound, Response
-from aiohttp.web_urldispatcher import (AbstractResource, ResourceRoute,
+import aiohttp_kt as aiohttp
+from aiohttp_kt import hdrs, web
+from aiohttp_kt.test_utils import make_mocked_request
+from aiohttp_kt.web import HTTPMethodNotAllowed, HTTPNotFound, Response
+from aiohttp_kt.web_urldispatcher import (AbstractResource, ResourceRoute,
                                        SystemRoute, View,
                                        _defaultExpectHandler)
 

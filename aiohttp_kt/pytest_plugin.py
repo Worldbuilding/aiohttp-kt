@@ -3,7 +3,7 @@ import contextlib
 
 import pytest
 
-from aiohttp.web import Application
+from aiohttp_kt.web import Application
 
 from .test_utils import unused_port as _unused_port
 from .test_utils import (RawTestServer, TestClient, TestServer, loop_context,

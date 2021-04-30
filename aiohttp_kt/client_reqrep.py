@@ -11,7 +11,7 @@ from http.cookies import CookieError, Morsel
 from multidict import CIMultiDict, CIMultiDictProxy, MultiDict, MultiDictProxy
 from yarl import URL
 
-import aiohttp
+import aiohttp_kt as aiohttp
 
 from . import hdrs, helpers, streams
 from .helpers import HeadersMixin, SimpleCookie, TimerNoop

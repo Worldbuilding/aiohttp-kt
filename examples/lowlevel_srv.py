@@ -1,5 +1,5 @@
 import asyncio
-from aiohttp import web
+from aiohttp_kt import web
 
 
 async def handler(request):

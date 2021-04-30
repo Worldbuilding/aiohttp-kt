@@ -4,10 +4,10 @@ import pathlib
 
 import pytest
 
-import aiohttp
-from aiohttp import web
-from aiohttp.file_sender import FileSender
-from aiohttp.test_utils import loop_context
+import aiohttp_kt as aiohttp
+from aiohttp_kt import web
+from aiohttp_kt.file_sender import FileSender
+from aiohttp_kt.test_utils import loop_context
 
 try:
     import ssl

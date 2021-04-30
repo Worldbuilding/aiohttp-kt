@@ -7,7 +7,7 @@ import asyncio
 import pytest
 from unittest import mock
 
-from aiohttp import web
+from aiohttp_kt import web
 
 pytest_plugins = 'aiohttp.pytest_plugin'
 

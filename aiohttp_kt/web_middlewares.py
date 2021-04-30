@@ -1,8 +1,8 @@
 import asyncio
 import re
 
-from aiohttp.web_exceptions import HTTPMovedPermanently
-from aiohttp.web_urldispatcher import SystemRoute
+from aiohttp_kt.web_exceptions import HTTPMovedPermanently
+from aiohttp_kt.web_urldispatcher import SystemRoute
 
 __all__ = (
     'normalize_path_middleware',

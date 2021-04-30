@@ -4,9 +4,9 @@ from unittest import mock
 import pytest
 from multidict import CIMultiDict
 
-from aiohttp.signals import Signal
-from aiohttp.test_utils import make_mocked_request
-from aiohttp.web import Application, Response
+from aiohttp_kt.signals import Signal
+from aiohttp_kt.test_utils import make_mocked_request
+from aiohttp_kt.web import Application, Response
 
 
 @pytest.fixture

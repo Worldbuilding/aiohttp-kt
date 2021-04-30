@@ -7,8 +7,8 @@ from unittest import mock
 
 import pytest
 
-from aiohttp import helpers
-from aiohttp.test_utils import make_mocked_coro
+from aiohttp_kt import helpers
+from aiohttp_kt.test_utils import make_mocked_coro
 
 base_worker = pytest.importorskip('aiohttp.worker')
 

@@ -12,7 +12,7 @@ from wsgiref.handlers import format_date_time
 
 from multidict import CIMultiDict, istr
 
-import aiohttp
+import aiohttp_kt as aiohttp
 
 from . import errors, hdrs
 from .log import internal_logger

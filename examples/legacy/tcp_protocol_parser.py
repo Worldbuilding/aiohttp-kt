@@ -4,7 +4,7 @@ import argparse
 import asyncio
 import collections
 
-import aiohttp
+import aiohttp_kt as aiohttp
 
 try:
     import signal

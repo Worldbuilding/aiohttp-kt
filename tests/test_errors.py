@@ -1,6 +1,6 @@
 """Tests for errors.py"""
 
-import aiohttp
+import aiohttp_kt as aiohttp
 
 
 def test_bad_status_line1():

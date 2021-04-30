@@ -14,8 +14,8 @@ import socket
 import sys
 from urllib.parse import urlsplit
 
-import aiohttp
-from aiohttp import hdrs, server
+import aiohttp_kt as aiohttp
+from aiohttp_kt import hdrs, server
 
 __all__ = ('WSGIServerHttpProtocol',)
 

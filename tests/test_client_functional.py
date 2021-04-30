@@ -11,11 +11,11 @@ from unittest import mock
 import pytest
 from multidict import MultiDict
 
-import aiohttp
-from aiohttp import hdrs, web
-from aiohttp.errors import FingerprintMismatch
-from aiohttp.helpers import create_future
-from aiohttp.multipart import MultipartWriter
+import aiohttp_kt as aiohttp
+from aiohttp_kt import hdrs, web
+from aiohttp_kt.errors import FingerprintMismatch
+from aiohttp_kt.helpers import create_future
+from aiohttp_kt.multipart import MultipartWriter
 
 
 @pytest.fixture

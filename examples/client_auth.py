@@ -1,6 +1,6 @@
 import asyncio
 
-import aiohttp
+import aiohttp_kt as aiohttp
 
 
 async def fetch(session):

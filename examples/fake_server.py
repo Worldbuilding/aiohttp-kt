@@ -3,10 +3,10 @@ import pathlib
 import socket
 import ssl
 
-import aiohttp
-from aiohttp import web
-from aiohttp.resolver import DefaultResolver
-from aiohttp.test_utils import unused_port
+import aiohttp_kt as aiohttp
+from aiohttp_kt import web
+from aiohttp_kt.resolver import DefaultResolver
+from aiohttp_kt.test_utils import unused_port
 
 
 def http_method(method, path):

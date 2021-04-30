@@ -3,9 +3,9 @@ from unittest import mock
 
 from yarl import URL
 
-from aiohttp import hdrs, helpers
-from aiohttp.file_sender import FileSender
-from aiohttp.test_utils import make_mocked_coro, make_mocked_request
+from aiohttp_kt import hdrs, helpers
+from aiohttp_kt.file_sender import FileSender
+from aiohttp_kt.test_utils import make_mocked_coro, make_mocked_request
 
 
 def test_env_nosendfile():

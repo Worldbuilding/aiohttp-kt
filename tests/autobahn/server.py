@@ -3,7 +3,7 @@
 import asyncio
 import logging
 
-from aiohttp import web
+from aiohttp_kt import web
 
 
 @asyncio.coroutine

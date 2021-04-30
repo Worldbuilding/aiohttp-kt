@@ -3,7 +3,7 @@ from unittest import mock
 
 import pytest
 
-from aiohttp import errors, web
+from aiohttp_kt import errors, web
 
 
 @asyncio.coroutine

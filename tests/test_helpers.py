@@ -4,8 +4,8 @@ from unittest import mock
 
 import pytest
 
-from aiohttp import helpers
-from aiohttp.test_utils import loop_context
+from aiohttp_kt import helpers
+from aiohttp_kt.test_utils import loop_context
 
 try:
     import uvloop

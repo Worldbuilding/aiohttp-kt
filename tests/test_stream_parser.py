@@ -4,7 +4,7 @@ from unittest import mock
 
 import pytest
 
-from aiohttp import parsers
+from aiohttp_kt import parsers
 
 DATA = b'line1\nline2\nline3\n'
 

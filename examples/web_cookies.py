@@ -5,7 +5,7 @@
 import asyncio
 from pprint import pformat
 
-from aiohttp import web
+from aiohttp_kt import web
 
 
 tmpl = '''\

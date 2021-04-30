@@ -6,9 +6,9 @@ import pytest
 from multidict import CIMultiDict, MultiDict
 from yarl import URL
 
-from aiohttp.protocol import HttpVersion
-from aiohttp.streams import StreamReader
-from aiohttp.test_utils import make_mocked_request
+from aiohttp_kt.protocol import HttpVersion
+from aiohttp_kt.streams import StreamReader
+from aiohttp_kt.test_utils import make_mocked_request
 
 
 @pytest.fixture

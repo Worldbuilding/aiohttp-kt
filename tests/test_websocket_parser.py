@@ -4,9 +4,9 @@ from unittest import mock
 
 import pytest
 
-import aiohttp
-from aiohttp import WebSocketError, WSCloseCode, WSMessage, WSMsgType, _ws_impl
-from aiohttp._ws_impl import (PACK_CLOSE_CODE, PACK_LEN1, PACK_LEN2, PACK_LEN3,
+import aiohttp_kt as aiohttp
+from aiohttp_kt import WebSocketError, WSCloseCode, WSMessage, WSMsgType, _ws_impl
+from aiohttp_kt._ws_impl import (PACK_CLOSE_CODE, PACK_LEN1, PACK_LEN2, PACK_LEN3,
                               WebSocketParser, _websocket_mask, parse_frame)
 
 

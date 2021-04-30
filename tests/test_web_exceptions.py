@@ -5,8 +5,8 @@ from unittest import mock
 
 import pytest
 
-from aiohttp import signals, web
-from aiohttp.test_utils import make_mocked_request
+from aiohttp_kt import signals, web
+from aiohttp_kt.test_utils import make_mocked_request
 
 
 @pytest.fixture

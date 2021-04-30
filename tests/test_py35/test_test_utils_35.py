@@ -1,9 +1,9 @@
 import pytest
 
-import aiohttp
-from aiohttp import web
-from aiohttp.test_utils import TestClient as _TestClient
-from aiohttp.test_utils import TestServer as _TestServer
+import aiohttp_kt as aiohttp
+from aiohttp_kt import web
+from aiohttp_kt.test_utils import TestClient as _TestClient
+from aiohttp_kt.test_utils import TestServer as _TestServer
 
 
 @pytest.fixture

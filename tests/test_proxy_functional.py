@@ -5,9 +5,9 @@ from unittest import mock
 import pytest
 from yarl import URL
 
-import aiohttp
-import aiohttp.helpers
-import aiohttp.web
+import aiohttp_kt as aiohttp
+import aiohttp_kt.helpers
+import aiohttp_kt.web
 
 
 @pytest.fixture

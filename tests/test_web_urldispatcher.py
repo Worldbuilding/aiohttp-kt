@@ -8,8 +8,8 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from aiohttp import abc, web
-from aiohttp.web_urldispatcher import SystemRoute
+from aiohttp_kt import abc, web
+from aiohttp_kt.web_urldispatcher import SystemRoute
 
 
 @pytest.fixture(scope='function')

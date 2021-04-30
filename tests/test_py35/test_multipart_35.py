@@ -1,7 +1,7 @@
 import io
 import json
 
-import aiohttp
+import aiohttp_kt as aiohttp
 import aiohttp.hdrs as h
 
 

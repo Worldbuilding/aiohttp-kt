@@ -7,7 +7,7 @@ import asyncio
 import functools
 import json
 
-from aiohttp.web import Application, Response, View, json_response, run_app
+from aiohttp_kt.web import Application, Response, View, json_response, run_app
 
 
 class MyView(View):

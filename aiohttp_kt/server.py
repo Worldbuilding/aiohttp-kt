@@ -8,10 +8,10 @@ import warnings
 from contextlib import suppress
 from html import escape as html_escape
 
-import aiohttp
-from aiohttp import errors, hdrs, helpers, streams
-from aiohttp.helpers import TimeService, _get_kwarg, ensure_future
-from aiohttp.log import access_logger, server_logger
+import aiohttp_kt as aiohttp
+from aiohttp_kt import errors, hdrs, helpers, streams
+from aiohttp_kt.helpers import TimeService, _get_kwarg, ensure_future
+from aiohttp_kt.log import access_logger, server_logger
 
 __all__ = ('ServerHttpProtocol',)
 

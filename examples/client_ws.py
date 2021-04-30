@@ -5,7 +5,7 @@ import asyncio
 import signal
 import sys
 
-import aiohttp
+import aiohttp_kt as aiohttp
 
 try:
     import selectors

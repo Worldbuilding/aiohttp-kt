@@ -4,9 +4,9 @@ import asyncio
 
 import pytest
 
-import aiohttp
-from aiohttp import helpers, web
-from aiohttp._ws_impl import WSMsgType
+import aiohttp_kt as aiohttp
+from aiohttp_kt import helpers, web
+from aiohttp_kt._ws_impl import WSMsgType
 
 
 @asyncio.coroutine

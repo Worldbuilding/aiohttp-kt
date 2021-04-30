@@ -1,8 +1,8 @@
 import asyncio
 from unittest import mock
 
-from aiohttp import web
-from aiohttp.test_utils import make_mocked_coro, make_mocked_request
+from aiohttp_kt import web
+from aiohttp_kt.test_utils import make_mocked_coro, make_mocked_request
 
 
 def test_repr(loop):

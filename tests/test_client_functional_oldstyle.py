@@ -23,10 +23,10 @@ from unittest import mock
 
 from multidict import MultiDict
 
-import aiohttp
-from aiohttp import client, helpers, server, test_utils
-from aiohttp.multipart import MultipartWriter
-from aiohttp.test_utils import run_briefly, unused_port
+import aiohttp_kt as aiohttp
+from aiohttp_kt import client, helpers, server, test_utils
+from aiohttp_kt.multipart import MultipartWriter
+from aiohttp_kt.test_utils import run_briefly, unused_port
 
 
 @contextlib.contextmanager

@@ -1,6 +1,6 @@
-import aiohttp
-from aiohttp import helpers, web
-from aiohttp._ws_impl import WSMsgType
+import aiohttp_kt as aiohttp
+from aiohttp_kt import helpers, web
+from aiohttp_kt._ws_impl import WSMsgType
 
 
 async def test_server_ws_async_for(loop, test_server):

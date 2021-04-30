@@ -12,10 +12,10 @@ import pytest
 from multidict import CIMultiDict, CIMultiDictProxy, upstr
 from yarl import URL
 
-import aiohttp
-from aiohttp import BaseConnector, hdrs, helpers
-from aiohttp.client_reqrep import ClientRequest, ClientResponse
-from aiohttp.helpers import SimpleCookie
+import aiohttp_kt as aiohttp
+from aiohttp_kt import BaseConnector, hdrs, helpers
+from aiohttp_kt.client_reqrep import ClientRequest, ClientResponse
+from aiohttp_kt.helpers import SimpleCookie
 
 
 @pytest.yield_fixture

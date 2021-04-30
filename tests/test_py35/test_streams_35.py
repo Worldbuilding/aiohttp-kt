@@ -1,6 +1,6 @@
 import pytest
 
-from aiohttp import streams
+from aiohttp_kt import streams
 
 DATA = b'line1\nline2\nline3\n'
 

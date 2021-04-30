@@ -5,7 +5,7 @@ from unittest import mock
 
 import pytest
 
-from aiohttp import hdrs, protocol
+from aiohttp_kt import hdrs, protocol
 
 
 @pytest.fixture

@@ -8,8 +8,8 @@ from unittest import mock
 import pytest
 from yarl import URL
 
-from aiohttp import CookieJar
-from aiohttp.helpers import SimpleCookie
+from aiohttp_kt import CookieJar
+from aiohttp_kt.helpers import SimpleCookie
 
 
 @pytest.fixture

@@ -3,7 +3,7 @@
 import asyncio
 
 import aioredis
-from aiohttp.web import Application, WebSocketResponse, run_app
+from aiohttp_kt.web import Application, WebSocketResponse, run_app
 
 
 async def websocket_handler(request):

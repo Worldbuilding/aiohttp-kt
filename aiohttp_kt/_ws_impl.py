@@ -11,9 +11,9 @@ import sys
 from enum import IntEnum
 from struct import Struct
 
-from aiohttp import errors, hdrs
-from aiohttp.helpers import noop
-from aiohttp.log import ws_logger
+from aiohttp_kt import errors, hdrs
+from aiohttp_kt.helpers import noop
+from aiohttp_kt.log import ws_logger
 
 __all__ = ('WebSocketParser', 'WebSocketWriter', 'do_handshake',
            'WSMessage', 'WebSocketError', 'WSMsgType', 'WSCloseCode')

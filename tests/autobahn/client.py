@@ -2,7 +2,7 @@
 
 import asyncio
 
-import aiohttp
+import aiohttp_kt as aiohttp
 
 
 def client(loop, url, name):

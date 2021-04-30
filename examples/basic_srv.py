@@ -4,12 +4,13 @@
 import asyncio
 from urllib.parse import parse_qsl, urlparse
 
-import aiohttp
-import aiohttp.server
-from aiohttp import MultiDict
+import aiohttp_kt
+import aiohttp_kt as aiohttp
+import aiohttp_kt.server
+from aiohttp_kt import MultiDict
 
 
-class HttpRequestHandler(aiohttp.server.ServerHttpProtocol):
+class HttpRequestHandler(aiohttp_kt.server.ServerHttpProtocol):
 
     @asyncio.coroutine
     def handle_request(self, message, payload):

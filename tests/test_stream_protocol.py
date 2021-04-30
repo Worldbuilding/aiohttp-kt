@@ -1,6 +1,6 @@
 from unittest import mock
 
-from aiohttp import parsers
+from aiohttp_kt import parsers
 
 
 def test_connection_made(loop):

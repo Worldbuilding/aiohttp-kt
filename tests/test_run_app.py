@@ -1,7 +1,7 @@
 import ssl
 from unittest import mock
 
-from aiohttp import web
+from aiohttp_kt import web
 
 
 def test_run_app_http(loop, mocker):

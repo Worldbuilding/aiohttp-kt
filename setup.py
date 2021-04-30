@@ -17,7 +17,7 @@ except ImportError:
 
 ext = '.pyx' if USE_CYTHON else '.c'
 
-extensions = [Extension('aiohttp._websocket', ['aiohttp/_websocket' + ext])]
+extensions = [Extension('aiohttp_kt._websocket', ['aiohttp_kt/_websocket' + ext])]
 
 
 if USE_CYTHON:
@@ -46,7 +46,7 @@ class ve_build_ext(build_ext):
 
 
 with codecs.open(os.path.join(os.path.abspath(os.path.dirname(
-        __file__)), 'aiohttp', '__init__.py'), 'r', 'latin1') as fp:
+        __file__)), 'aiohttp_kt', '__init__.py'), 'r', 'latin1') as fp:
     try:
         version = re.findall(r"^__version__ = '([^']+)'\r?$",
                              fp.read(), re.M)[0]
@@ -58,7 +58,7 @@ install_requires = ['chardet', 'multidict>=2.1.4',
                     'async_timeout>=1.1.0', 'yarl>=0.9.8,<0.10']
 
 if sys.version_info < (3, 4, 2):
-    raise RuntimeError("aiohttp requires Python 3.4.2+")
+    raise RuntimeError("aiohttp_kt requires Python 3.4.2+")
 
 
 def read(f):
@@ -79,7 +79,7 @@ tests_require = install_requires + ['pytest', 'gunicorn', 'pytest-timeout']
 
 
 args = dict(
-    name='aiohttp',
+    name='aiohttp_kt',
     version=version,
     description='http client/server for asyncio',
     long_description='\n\n'.join((read('README.rst'), read('CHANGES.rst'))),
@@ -103,7 +103,7 @@ args = dict(
     maintainer_email='aio-libs@googlegroups.com',
     url='https://github.com/aio-libs/aiohttp/',
     license='Apache 2',
-    packages=['aiohttp'],
+    packages=['aiohttp_kt'],
     install_requires=install_requires,
     tests_require=tests_require,
     include_package_data=True,

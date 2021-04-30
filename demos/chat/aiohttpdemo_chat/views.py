@@ -4,7 +4,7 @@ import random
 import string
 
 import aiohttp_jinja2
-from aiohttp import web
+from aiohttp_kt import web
 
 log = logging.getLogger(__name__)
 

@@ -6,9 +6,9 @@ from unittest import mock
 
 from yarl import URL
 
-import aiohttp
-from aiohttp.client_reqrep import ClientRequest, ClientResponse
-from aiohttp.test_utils import make_mocked_coro
+import aiohttp_kt as aiohttp
+from aiohttp_kt.client_reqrep import ClientRequest, ClientResponse
+from aiohttp_kt.test_utils import make_mocked_coro
 
 
 class TestProxy(unittest.TestCase):

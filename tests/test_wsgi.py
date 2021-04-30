@@ -8,8 +8,8 @@ from unittest import mock
 
 import multidict
 
-import aiohttp
-from aiohttp import helpers, protocol, wsgi
+import aiohttp_kt as aiohttp
+from aiohttp_kt import helpers, protocol, wsgi
 
 
 class TestHttpWsgiServerProtocol(unittest.TestCase):

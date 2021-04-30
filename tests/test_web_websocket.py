@@ -3,12 +3,12 @@ from unittest import mock
 
 import pytest
 
-from aiohttp import (CIMultiDict, WSMessage, WSMsgType, errors, helpers,
+from aiohttp_kt import (CIMultiDict, WSMessage, WSMsgType, errors, helpers,
                      signals, web)
-from aiohttp.log import ws_logger
-from aiohttp.test_utils import make_mocked_coro, make_mocked_request
-from aiohttp.web import HTTPBadRequest, HTTPMethodNotAllowed, WebSocketResponse
-from aiohttp.web_ws import WebSocketReady
+from aiohttp_kt.log import ws_logger
+from aiohttp_kt.test_utils import make_mocked_coro, make_mocked_request
+from aiohttp_kt.web import HTTPBadRequest, HTTPMethodNotAllowed, WebSocketResponse
+from aiohttp_kt.web_ws import WebSocketReady
 
 
 @pytest.fixture
